@@ -2,9 +2,9 @@ version: 0.1
 phases:
   install:
     commands:
-      - aws cloudformation package --template samTemplate.yaml --s3-bucket arficatbucket --output yaml > outputSamTemplate.yaml
+      - aws cloudformation package --template samTemplate.yml --s3-bucket arficatbucket --output yml > outputSamTemplate.yml
 artifacts:
   type: zip
   files:
-    - samTemplate.yaml
-    - outputSamTemplate.yaml
+    - samTemplate.yml
+    - outputSamTemplate.yml
