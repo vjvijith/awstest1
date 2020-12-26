@@ -11,7 +11,7 @@ Resources:
       Description: 'Lambda function for CD Demo'
       MemorySize: 128
       Timeout: 30
-      Role: arn:aws:s3:::arficatbucket
+      Role: arn:aws:iam::826076325250:role/CloudfomationServiceRole
       Events:
         getAZsAPI:
           Type: Api
