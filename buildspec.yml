@@ -1,6 +1,6 @@
 version: 0.1
 phases:
-  install:
+  build:
     commands:
       - aws cloudformation package --template-file samTemplate.yml --s3-bucket arficatbucket --output-template-file outputSamTemplate.yml
 artifacts:
